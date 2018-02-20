@@ -5,7 +5,7 @@
 function p_conn($host,$port,$database,$user,$user_password){
 	
 	$conn_string = " host=".$host." port=".$port." dbname=".$database." user=".$user." password=".$user_password." ";
-	$p_conn = pg_connect ($conn_string);
+	$p_conn = pg_connect ($conn_string,PGSQL_CONNECT_FORCE_NEW);
 	
 	if(!$p_conn) {
 		return false;

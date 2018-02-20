@@ -1,27 +1,34 @@
 <?php
+ini_set('display_errors', '1');
+//phpinfo();
 
-
-	if(false) {	
 		#postgres - produkcyjny
 		#dane do logowania
 		define( 'h__' , 'localhost'    );
 		define( 'p__' , '5432'         );
-		define( 'd__' , '25546772_01'  );
-		define( 'u__' , '25546772_01'  );
-		define( 't__' , 'iOcD7OCp#aTx' );
-	}else{
-		#postgres - testowy
-		#dane do logowania
-		define( 'h__' , 'localhost'    );
-		define( 'p__' , '5432'         );
-		define( 'd__' , 'nescom'       );
-		define( 'u__' , 'adam'         );
-		define( 't__' , 'Adaruc201292' );
-	}
+		define( 'd__' , 'createmo_nescom'  );
+		define( 'u__' , 'createmo_salvabitur'  );
+		define( 't__' , 'Chrzanek66' );
+
+	########################################################################################
+		
+	define( '_classes'   , 'classes/'   );
+	define( '_functions' , 'functions/' );																	#
+																														#
+	include_once(_classes."logged_user.php");													         #
+																														#
+	include_once(_functions."basic_functions.php");													   #
+																														#
+	session_start();																							   #
+														                                                #
+	include_once("translate.php");													                  #
+														                                                #
+	#polaczenie z baza danych													                        #
+	$p_conn = p_conn(h__,p__,d__,u__,t__);													            #
+																														#
+	########################################################################################
 	
-	
-	define( '_classes'   , './classes/'   );
-	define( '_functions' , './functions/' );
+
 	
 
 ?>

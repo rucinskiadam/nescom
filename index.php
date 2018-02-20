@@ -1,19 +1,6 @@
 <?php
-########################################################################################
-include_once("config.php");																				#
-																													#
-include_once(_classes."logged_user.php");													         #
-																													#
-include_once(_functions."basic_functions.php");													   #
-																													#
-session_start();																							   #
-													                                                #
-include_once("translate.php");													                  #
-													                                                #
-#polaczenie z baza danych													                        #
-$p_conn = p_conn(h__,p__,d__,u__,t__);													            #
-																													#
-########################################################################################
+	include_once("config.php");		
+
 
 
 #formulrz zmiany jezyka
