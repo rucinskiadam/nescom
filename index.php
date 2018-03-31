@@ -22,7 +22,6 @@
 
 
 
-
 #test tlumaczenia
 	echo '<form method="POST" action="'.$_SERVER['PHP_SELF'].'" >';		
 		echo '<input type="submit" value="aaa">';
