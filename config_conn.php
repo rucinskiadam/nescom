@@ -4,18 +4,18 @@
 		#postgres - testowy
 		#dane do logowania
 		define( 'h__' , 'localhost'    );
-		define( 'p__' , '5432'         );
-		define( 'd__' , 'nescom'       );
-		define( 'u__' , 'adam'         );
-		define( 't__' , 'Adaruc201292' );
+		define( 'p__' , '*******'         );
+		define( 'd__' , '*******'       );
+		define( 'u__' , '*******'         );
+		define( 't__' , '*******' );
 	}else{
 		#postgres - produkcyjny
 		#dane do logowania
 		define( 'h__' , 'localhost'    );
-		define( 'p__' , '5432'         );
-		define( 'd__' , 'createmo_nescom'  );
-		define( 'u__' , 'createmo_salvabitur'  );
-		define( 't__' , 'Chrzanek66' );
+		define( 'p__' , '*******'         );
+		define( 'd__' , '*******'  );
+		define( 'u__' , '*******'  );
+		define( 't__' , '*******' );
 	}
 
 	
