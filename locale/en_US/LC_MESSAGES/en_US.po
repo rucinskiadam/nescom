@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: nescom_social\n"
-"POT-Creation-Date: 2018-02-03 19:51+0100\n"
-"PO-Revision-Date: 2018-02-03 19:51+0100\n"
+"POT-Creation-Date: 2018-02-21 00:30+0100\n"
+"PO-Revision-Date: 2018-02-21 00:31+0100\n"
 "Last-Translator: \n"
 "Language-Team: Nesscom <rucinskiadam28@gmail.com>\n"
 "Language: en_US\n"
@@ -15,17 +15,45 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: index.php:58 index.php:104
+#: index.php:31
+msgid "tekst przykladowy 1"
+msgstr "Sample text 6"
+
+#: index.php:32
+msgid "tekst przykladowy 2"
+msgstr "Sample text 5"
+
+#: index.php:33
+msgid "tekst przykladowy 3"
+msgstr "Sample text 4"
+
+#: index.php:34
+msgid "tekst przykladowy 4"
+msgstr "Sample text 3"
+
+#: index.php:35
+msgid "tekst przykladowy 5"
+msgstr "Sample text 2"
+
+#: index.php:36
+msgid "tekst przykladowy 6"
+msgstr "Sample text 1"
+
+#: index.php:79
 msgid ""
 "Twoje konto jest nie aktywne sprawdź swoją pocztę lub wyślij ponownie mail "
 "aktywacyjny."
 msgstr ""
 "Your account is not active Check your email or send an activation mail again."
 
-#: index.php:60 index.php:107
+#: index.php:82
 msgid "Błędny login lub hasło."
 msgstr "Wrong login or password."
 
-#: index.php:120
+#: index.php:97
 msgid "Zaloguj"
 msgstr "Log in"
+
+#: index.php:110
+msgid "Wyloguj"
+msgstr "Logout"

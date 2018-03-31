@@ -1,24 +1,39 @@
 <?php
-	include_once("config.php");		
+	########################################################################################
+																														#
+	define( '_classes'   , 'classes/'   );																	#
+	define( '_functions' , 'functions/' );																	#
+																														#
+	include_once("config_conn.php");																			#
+																														#
+	include_once(_classes."logged_user.php");													         #
+																														#
+	include_once(_functions."basic_functions.php");													   #																			   #
+														                                                #
+	include_once(_classes."translate.php");													         #
+														                                                #																														#
+	session_start();																		                  #                              
+														                                                #
+	#polaczenie z baza danych													                        #
+	$p_conn = p_conn(h__,p__,d__,u__,t__);													            #
+																														#
+	########################################################################################
 
 
 
-#formulrz zmiany jezyka
-	echo '<form method="POST" action="'.$_SERVER['PHP_SELF'].'" >';
-		
-		if( $_SESSION['LANG']  == "pl_PL" ){
-			echo '<input type="hidden" name="lang" value="en_US" >';
-		}else{
-			echo '<input type="hidden" name="lang" value="pl_PL" >';
-		}
-		
-		echo '<input type="submit" value="'.(( $_SESSION['LANG']  == "pl_PL" )?_('zmien na angielski'):_('zmien na polski')).'">';
-	
+
+
+#test tlumaczenia
+	echo '<form method="POST" action="'.$_SERVER['PHP_SELF'].'" >';		
+		echo '<input type="submit" value="aaa">';
 	echo '</form>';
 
-
-
-
+echo _("tekst przykladowy 1")."<br>";
+echo _("tekst przykladowy 2")."<br>";
+echo _("tekst przykladowy 3")."<br>";
+echo _("tekst przykladowy 4")."<br>";
+echo _("tekst przykladowy 5")."<br>";
+echo _("tekst przykladowy 6")."<br>";
 
 
 
